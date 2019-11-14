@@ -1,0 +1,32 @@
+{
+  "name": "hft-asgmt-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start:debug": "nodemon --inspect index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/runtime": "^7.7.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  }
+}

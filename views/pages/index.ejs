@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <% include ../partials/head %>
+  </head>
+  <body>
+    <%- include('../partials/nav', { active: 'index' }) %>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+            <h1 class="hft-sb-title display-5">Messages</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Anon</td>
+                <td>Such table!</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Doge</td>
+                <td>Wow!</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  <footer>
+      <% include ../partials/footer %>
+  </footer>
+
+  </body>
+</html>

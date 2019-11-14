@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <% include ../partials/head %>
+  </head>
+  <body>
+    <%- include('../partials/nav', { active: 'add-entry' }) %>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+            <h1 class="hft-sb-title display-5">Add a Message</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+          <div id="hft-shoutbox-alert" class="alert alert-danger d-none" role="alert">
+            😱 THERE ARE NOT ENOUGH CHARS IN YOUR FORM FIELDS
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xs-12 col-sm-8">
+          <form id="hft-shoutbox-form" method="POST" action="/add-entry">
+            <div class="form-group">
+              <label for="hft-shoutbox-form-input-name">Name</label>
+              <input type="text" class="form-control" id="hft-shoutbox-form-input-name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="hft-shoutbox-form-input-text">Example textarea</label>
+              <textarea class="form-control" id="hft-shoutbox-form-textarea" rows="3"></textarea>
+            </div>
+            <button id="hft-shoutbox-form-submit" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <footer>
+      <% include ../partials/footer %>
+  </footer>
+
+  </body>
+</html>
